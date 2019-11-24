@@ -99,7 +99,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 157
+        "__id__": 158
       }
     ],
     "_prefab": null,
@@ -113,8 +113,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 960,
-      "height": 640
+      "width": 480,
+      "height": 800
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -125,8 +125,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        480,
-        320,
+        240,
+        400,
         0,
         0,
         0,
@@ -189,7 +189,7 @@
       "array": [
         0,
         0,
-        497.09857177734375,
+        759.5042724609375,
         0,
         0,
         0,
@@ -284,8 +284,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        2.361999988555908,
-        238.56100463867188,
+        5.223999977111816,
+        310.11199951171875,
         0,
         0,
         0,
@@ -380,8 +380,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -357.9700012207031,
-        144.67300415039062,
+        -149.82200622558594,
+        194,
         0,
         0,
         0,
@@ -948,8 +948,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -357.9700012207031,
-        -20.17799949645996,
+        49.029998779296875,
+        194,
         0,
         0,
         0,
@@ -1328,8 +1328,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -357.9700012207031,
-        61.935001373291016,
+        -50.66600036621094,
+        194,
         0,
         0,
         0,
@@ -5441,7 +5441,7 @@
         "__id__": 111
       },
       {
-        "__id__": 156
+        "__id__": 157
       }
     ],
     "_prefab": null,
@@ -5455,8 +5455,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 700,
-      "height": 640
+      "width": 480,
+      "height": 500
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5468,7 +5468,7 @@
       "ctor": "Float32Array",
       "array": [
         0,
-        640,
+        800,
         0,
         0,
         0,
@@ -5517,8 +5517,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 576,
-      "height": 40.32
+      "width": 450,
+      "height": 31.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5530,7 +5530,7 @@
       "ctor": "Float32Array",
       "array": [
         0,
-        231.25,
+        178.75,
         0,
         0,
         0,
@@ -5570,8 +5570,8 @@
     "_useOriginalSize": false,
     "_string": "只差一步就能领养宠物啦，来为它起名吧",
     "_N$string": "只差一步就能领养宠物啦，来为它起名吧",
-    "_fontSize": 32,
-    "_lineHeight": 32,
+    "_fontSize": 25,
+    "_lineHeight": 25,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -5622,8 +5622,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 480,
-      "height": 77.5
+      "width": 460,
+      "height": 42.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5635,7 +5635,7 @@
       "ctor": "Float32Array",
       "array": [
         0,
-        93.75,
+        76.25,
         0,
         0,
         0,
@@ -5684,8 +5684,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
-      "height": 37.8
+      "width": 100,
+      "height": 31.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5737,8 +5737,8 @@
     "_useOriginalSize": false,
     "_string": "宠物昵称",
     "_N$string": "宠物昵称",
-    "_fontSize": 30,
-    "_lineHeight": 30,
+    "_fontSize": 25,
+    "_lineHeight": 25,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -5787,7 +5787,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 320,
-      "height": 50
+      "height": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5798,7 +5798,7 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        70,
+        60,
         2.2109999656677246,
         0,
         0,
@@ -5852,7 +5852,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 314,
-      "height": 44
+      "height": 39
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6094,7 +6094,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 50
+      "height": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6106,7 +6106,7 @@
       "ctor": "Float32Array",
       "array": [
         -140,
-        25,
+        22.5,
         0,
         0,
         0,
@@ -6260,8 +6260,8 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 480,
-      "height": 77.5
+      "width": 460,
+      "height": 42.5
     },
     "_resize": 1,
     "_N$layoutType": 1,
@@ -6331,8 +6331,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 480,
-      "height": 77.5
+      "width": 460,
+      "height": 42.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6344,7 +6344,7 @@
       "ctor": "Float32Array",
       "array": [
         0,
-        -43.75,
+        -26.25,
         0,
         0,
         0,
@@ -6393,8 +6393,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
-      "height": 37.8
+      "width": 100,
+      "height": 31.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6446,8 +6446,8 @@
     "_useOriginalSize": false,
     "_string": "主人昵称",
     "_N$string": "主人昵称",
-    "_fontSize": 30,
-    "_lineHeight": 30,
+    "_fontSize": 25,
+    "_lineHeight": 25,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -6496,7 +6496,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 320,
-      "height": 50
+      "height": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6507,7 +6507,7 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        70,
+        60,
         1.0130000114440918,
         0,
         0,
@@ -6561,7 +6561,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 320,
-      "height": 50
+      "height": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6803,7 +6803,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 50
+      "height": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6815,7 +6815,7 @@
       "ctor": "Float32Array",
       "array": [
         -140,
-        25,
+        22.5,
         0,
         0,
         0,
@@ -6969,8 +6969,8 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 480,
-      "height": 77.5
+      "width": 460,
+      "height": 42.5
     },
     "_resize": 1,
     "_N$layoutType": 1,
@@ -7032,7 +7032,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 100,
-      "height": 77.5
+      "height": 42.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -7044,7 +7044,7 @@
       "ctor": "Float32Array",
       "array": [
         0,
-        -181.25,
+        -128.75,
         0,
         0,
         0,
@@ -7101,7 +7101,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 100,
-      "height": 77.5
+      "height": 42.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -7298,7 +7298,11 @@
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 1.2,
-    "clickEvents": [],
+    "clickEvents": [
+      {
+        "__id__": 156
+      }
+    ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
     "_N$transition": 2,
@@ -7369,6 +7373,16 @@
     "_id": "1aQgluYjZBzophJIlfKOg/"
   },
   {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 15
+    },
+    "component": "",
+    "_componentId": "27dcalXpnxJ66dT1nU/AwGd",
+    "handler": "onCompleteClicked",
+    "customEventData": ""
+  },
+  {
     "__type__": "cc.Layout",
     "_name": "",
     "_objFlags": 0,
@@ -7378,8 +7392,8 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 700,
-      "height": 640
+      "width": 480,
+      "height": 500
     },
     "_resize": 2,
     "_N$layoutType": 2,
@@ -7411,11 +7425,11 @@
     "_enabled": true,
     "_designResolution": {
       "__type__": "cc.Size",
-      "width": 960,
-      "height": 640
+      "width": 480,
+      "height": 800
     },
     "_fitWidth": false,
-    "_fitHeight": false,
+    "_fitHeight": true,
     "_id": "3ciHRfOuJGhYe7vmLeERMs"
   }
 ]

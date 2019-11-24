@@ -8,6 +8,8 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
+var globalData = require('globalData');
+
 cc.Class({
     extends: cc.Component,
 
@@ -27,50 +29,6 @@ cc.Class({
         namePage: cc.Sprite, // 命名页面
         _isNamePageShow: false, // 是否显示命名页面
         
-        species: {
-            get () {
-                return this._species;
-            },
-            set (value) {
-                this._species = value;
-            }
-        },
-
-        gender: {
-            get () {
-                return this._gender;
-            },
-            set (value) {
-                this._gender = value;
-            }
-        },
-
-        skin: {
-            get () {
-                return this._skin;
-            },
-            set (value) {
-                this._skin = value;
-            }
-        },
-
-        petName: {
-            get() {
-                return this._petName;
-            },
-            set(value) {
-                this._petName = value;
-            }
-        },
-
-        masterName: {
-            get() {
-                return this._masterName;
-            },
-            set(value) {
-                this._masterName = value;
-            }
-        }
     },
 
     // 监听button点击事件
@@ -122,7 +80,9 @@ cc.Class({
             console.log("species value error");
             return RangeError;
         }
-        this.species = value;
+        globalData.species = value;
+        console.log(globalData);
+        // this.species = value;
 
         // 修改skin页面的物种精灵
         let sprite = this.portray.content.children[2].getChildByName("pickedPet").getComponent(cc.Sprite);
@@ -189,11 +149,11 @@ cc.Class({
             
             if (viewPos.y < element.height/2 && viewPos.y >= -element.height/2) {
                 // scroll滑动到相应的宠物种类时，进行处理
-                if (this.species != i) {
+                if (globalData.species != i) {
                     // 判断滑动是否使种类发生改变，发生改变进行以下处理
-                    this.items[this.species].scale = 0.8;
+                    this.items[globalData.species].scale = 0.8;
                     this.changeSpecies(i);
-                    this.items[this.species].scale = 1.25; 
+                    this.items[globalData.species].scale = 1.25; 
                 }     
             } 
               
@@ -207,8 +167,8 @@ cc.Class({
         for (let i = 0; i < toggleArry.length; i++) {
             const element = toggleArry[i];
             if (element.isChecked) {
-                this.skin = i;
-                if (this.skin == 0) {
+                globalData.gender = i;
+                if (globalData.gender == 0) {
                     console.log("user choose boy pet");
                 } else {
                     console.log("user choose girl pet");
@@ -222,7 +182,7 @@ cc.Class({
         for (let i = 0; i < toggleArry.length; i++) {
             const element = toggleArry[i];
             if (element.isChecked) {
-                this.skin = i;
+                globalData.skin = i;
                 console.log("user choose skin" + (i + 1) )
             }
         }
@@ -237,21 +197,25 @@ cc.Class({
     onInputEvent: function(text, editbox, customEventData){
         console.log(editbox);
         if (editbox.node.name == 'petNameInput') {
-            this.petName = text;
-            console.log("user set pet name", this.petName);
+            globalData.petName = text;
+            console.log("user set pet name", globalData.petName);
         } else if(editbox.node.name == 'masterNameInput'){
-            this.masterName = text;
-            console.log("user set master name", this.masterName);
+            globalData.masterName = text;
+            console.log("user set master name", globalData.masterName);
         }
+    },
+    onCompleteClicked: function() {
+        console.log('turn to main page');
+        cc.director.loadScene("mainPage");
     },
     // 显示命名页面
     showNamePage: function() {
         this._isNamePageShow = !this._isNamePageShow;
         let action = null;
         if (this._isNamePageShow) {
-            action = cc.moveBy(0.5, cc.v2(0, -640));
+            action = cc.moveBy(0.5, cc.v2(0, -800));
         } else {
-            action = cc.moveBy(0.5, cc.v2(0, 640));
+            action = cc.moveBy(0.5, cc.v2(0, 800));
         }
         // console.log(this.namePage.node);
         this.namePage.node.runAction(action);
@@ -266,12 +230,8 @@ cc.Class({
         // ------- 初始化宠物选项 -------       
         // 宠物种类
         this.changeSpecies(0);
-        this.items[this.species].scale = 1.25;
+        this.items[globalData.species].scale = 1.25;
         this.changeTitle(0);
-        // 宠物性别
-        this.gender = 0;
-        // 宠物毛色
-        this.skin = 0;
 
         this._isNamePageShow = false;
     },
